@@ -1,0 +1,5 @@
+#To take image from Nokia's raod Camera
+sudo fswebcam -i 0 -d /dev/video0 --jpeg 50 --loop 5 --save /var/www/html/road_image.jpg -r 640x480
+
+# piNoir camera
+raspivid -o video.h264 -t 15000
